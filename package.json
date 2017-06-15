@@ -1,0 +1,33 @@
+{
+  "name": "bucklescript-tea-tree",
+  "version": "0.0.1",
+  "description": "Tree View in Bucklescript-TEA",
+  "main": "dist/main.bundle.js",
+  "scripts": {
+    "build": "bsb && rollup -c && gzip < dist/main.bundle.js > dist/main.bundle.js.gz",
+    "build:all": "bsb -make-world && rollup -c",
+    "serve": "http-server -g -c-1",
+    "dev": "./scripts/dev_watch.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jordwest/bucklescript-tea-tree.git"
+  },
+  "author": "Jordan West",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordwest/bucklescript-tea-tree/issues"
+  },
+  "homepage": "https://github.com/jordwest/bucklescript-tea-tree#README",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "bs-platform": "^1.7.4",
+    "bucklescript-tea": "git+https://git@github.com/jordwest/bucklescript-tea.git#beea208535c412025bd068ad6a33832ec34fb694",
+    "rollup": "^0.42.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "bucklescript-tea-tree",
+    "bs-dependencies" : ["bucklescript-tea"],
+    "package-specs": ["es6"],
+    "sources": [
+        {
+            "dir": "src",
+            "subdirs": []
+        }
+    ]
+}
