@@ -1,0 +1,43 @@
+<html>
+    <head><title>Bucklescript TEA Tree</title></head>
+    <body>
+        <style>
+            body {
+                background-color: #faa;
+            }
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            ul li {
+                padding: 5px 10px;
+                font-size: 18px;
+                cursor: default;
+                background-color: #fcc;
+                margin: 0px 0px;
+                border-left: 10px solid red;
+                list-style-type: none;
+            }
+
+            .drag-off {
+                color: #000;
+            }
+
+            .drag-target {
+                background-color: #c77;
+            }
+            .drag-target.drag-over {
+                background-color: #aaa;
+            }
+
+            .drag-source {
+                opacity: 0.2;
+            }
+        </style>
+        <div id="app">
+        </div>
+        <script type="text/javascript" src="./main.bundle.js"></script>
+    </body>
+</html>
